@@ -1,0 +1,545 @@
+// ---------->COLORS <-----------
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+
+.bg-primary-gradient {
+    background: $primary-gradient-bg;
+}
+
+.text-primary {
+    color: $primary-color !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+
+.bg-light {
+    background-color: $light !important;
+}
+
+.bg-trending {
+    background-color: $trending-section-bg;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.text-gray {
+    color: $gray-text-color;
+}
+
+.text-title {
+    color: $title-text-color;
+}
+
+.text-navbar {
+    color: $navbar-text-color;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-55 {
+    margin-bottom: 55px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+//------------- FONTS
+
+// KOLLEKTIF
+
+.kollektif-regular {
+    font-family: $kollektif-regular;
+}
+
+.kollektif-italic {
+    font-family: $kollektif-italic;
+}
+
+.kollektif-bold {
+    font-family: $kollektif-bold;
+}
+
+.kollektif-bold-italic {
+    font-family: $kollektif-bold-italic;
+}
+
+
+// GILROY
+
+.gilroy-regular {
+    font-family: $gilroy-regular;
+}
+
+.gilroy-medium {
+    font-family: $gilroy-medium;
+}
+
+.gilroy-light {
+    font-family: $gilroy-light;
+}
+
+.gilroy-heavy {
+    font-family: $gilroy-heavy;
+}
+
+.gilroy-bold {
+    font-family: $gilroy-bold;
+}
+
+
+// INTER
+
+.inter-regular {
+    font-family: $inter-regular;
+}
+
+.inter-bold {
+    font-family: $inter-bold;
+}
+
+// ***************************************************
+
+
+// --------------------BUY/SELL SECTION START--------------------
+
+.buy-sell {
+    width: 100%;
+    padding: 60px 270px 0 270px;
+    position: relative;
+}
+
+.buy-sell-img {
+    max-width: 400px;
+    margin-left: 50%;
+    margin-bottom: -24px;
+    z-index: -1;
+    transform: translate(-50%, 0);
+}
+
+.text-standart-size {
+    @include text-standart-size;
+}
+
+.but-sell--container {
+    width: 100%;
+    max-width: calc(100% - 450px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-email--section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.name-email--section input {
+    width: 100%;
+    max-width: 340px;
+    padding: 18px;
+    border: 2px solid #485460;
+    max-height: 65px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.password-send-section {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.password-send-section input {
+    width: 100%;
+    max-width: 340px;
+    padding: 18px;
+    border: 2px solid #485460;
+    max-height: 65px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.password-send-section button {
+    width: 100%;
+    max-width: 340px;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+// .sign-up-image {
+//     transform: translate(0,-1%);
+// }
+
+// --------------------BUY/SELL SECTION END--------------------
+
+
+// **************************************
+
+
+// --------------------TRENDING SECTION START--------------------
+
+.trending {
+    max-width: 100%;
+    height: 888px;
+}
+
+.trending-head {
+    padding-top: 120px;
+    margin-bottom: 119px;
+    gap: 29px;
+}
+
+.trending-title {
+    font-size: 50px;
+    line-height: 51.09px;
+}
+
+.trending-subtitle {
+    max-width: 530px;
+    font-size: 18px;
+    line-height: 17px;
+    color: rgba(214, 214, 214, 1);
+}
+
+
+//------------- TRENDING GRAPHICS
+
+.green-box {
+    background: $graph-box-green-bg;
+    border: 2px solid #0BE881;
+    border-radius: 10px;
+}
+
+.red-box {
+    background: $graph-box-red-bg;
+    border: 2px solid #FF5E57;
+    border-radius: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #C4C4C4 !important;
+}
+
+.percent-green {
+    width: 73px;
+    height: 22px;
+    background: rgba(5, 196, 107, 1);
+    border-radius: 4px;
+}
+
+.percent-red {
+    width: 73px;
+    height: 22px;
+    background: rgba(255, 63, 52, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+//------- MAIN BOXES
+
+.btc-main-box {
+    max-width: 365px;
+    max-height: 347px;
+    gap: 81px;
+    padding-bottom: 28px;
+}
+
+
+.eth-main-box {
+    max-width: 442px;
+    max-height: 159px;
+    gap: 13px;
+    padding-bottom: 11px;
+}
+
+.xrp-main-box {
+    max-width: 510px;
+    max-height: 159px;
+    gap: 13px;
+    padding-bottom: 11px;
+    margin-left: 10px;
+}
+
+
+.bnb-main-box {
+    max-width: 438px;
+    max-height: 159px;
+    gap: 13px;
+    padding-bottom: 11px;
+}
+
+.ada-main-box {
+    max-width: 507px;
+    max-height: 159px;
+    gap: 13px;
+    padding-bottom: 11px;
+    margin-left: 10px;
+}
+
+
+
+.coin {
+    gap: 24px;
+}
+
+
+.btc-icon {
+    margin-bottom: 17px;
+}
+
+.graph-top {
+    padding: 21px 18px 0px 19px;
+}
+
+.coin-text {
+    font-family: $gilroy-heavy;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25.55px;
+    color: $white;
+    margin-bottom: 3px;
+}
+
+.coin-time {
+    font-family: $gilroy-medium;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20.44px;
+    color: $white;
+}
+
+.price {
+    font-family: $gilroy-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30.65px;
+    color: $white;
+}
+
+
+.coin-right-bottom {
+    margin-top: 29px;
+}
+
+.right-coin-group {
+    padding-left: 10px;
+}
+
+
+
+//--------------- TESTIMONIALS SECTION
+
+
+
+//--------------- TESTIMONIALS SECTION
+
+.testimonials {
+    padding-bottom: 90px;
+    min-height: 50vh;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -50px;
+}
+
+.testimonials .card-box-left{
+    max-width: none;
+}
+
+.testimonials .carousel-control-prev, .testimonials .carousel-control-next{
+    display: none;
+}
+
+.testimonials .carousel-inner {
+    overflow: inherit;
+}
+
+.testimonials-head {
+    gap: 29px;
+    padding: 70px 12px;
+}
+
+.testimonials-title {
+    max-width: 247px;
+    font-family: $kollektif-bold;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+}
+
+.testimonials-subtitle {
+    max-width: 530px;
+    font-family: $kollektif-regular;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+//--------- TESTIMONIALS MAIN
+
+.testimonials-main {
+    margin-top: 84px;
+    margin-bottom: 185px;
+}
+
+.card-box-left {
+    max-width: 426px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    padding: 52px 0 34px 0;
+    margin-top: 50px;
+}
+
+.card-box {
+    max-width: 426px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.card-box-bottom {
+    max-width: 682px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    padding: 52px 0 34px 0;
+}
+
+
+.card-img {
+    transform: translate(0, -110%);
+}
+
+.card-img-bottom {
+    transform: translate(0, 0%);
+}
+
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(58, 58, 58, 1);
+}
+
+.card-text-top {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(29, 209, 161, 1);
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(58, 58, 58, 1);
+    margin-top: 14px;
+}
+
+.card-text-bottom {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(58, 58, 58, 1);
+    padding-top: 28px;
+}
+
+.testimonials-card-bottom {
+    margin-top: 85px;
+}
+
+
+/*
+Mobile
+*/
+
+.d-lg-none {
+    display: none !important;
+}
+
+.d-lg-block {
+    display: block !important;
+}
+
+.max-w-100 {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .d-sm-block {
+        display: block !important;
+    }
+
+    .buy-sell {
+        padding: 55px 11px !important;
+    }
+
+    .but-sell--container {
+        position: relative;
+        max-width: none;
+        width: 100%;
+        flex-direction: column;
+        transform: none;
+        left: auto;
+        bottom: auto;
+    }
+
+    .name-email--section,
+    .password-send-section {
+        width: 100%;
+    }
+
+    .name-email--section input,
+    .password-send-section input {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .password-send-section button {
+        width: 100%;
+        max-width: 100%;
+    }
+}

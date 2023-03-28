@@ -1,0 +1,147 @@
+.mt-71 {
+    margin-top: 71px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.footer {
+    max-width: 100%;
+    padding-bottom: 45px;
+}
+
+.big-logo {
+    transform: translate(0,-40%);
+}
+
+.footer-top {
+    gap: 45px;
+    margin-bottom: 55px;
+}
+
+.list-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: $primary-color;
+    margin-bottom: 12px;
+}
+
+.straight-line {
+    width: 255px;
+    border: 3px solid #FFD32A;
+    transform: rotate(180deg);
+    margin-bottom: 29px;
+}
+
+.item {
+    margin-bottom: 15px;
+
+    .item-group {
+
+        .link {
+            margin-left: 11px;
+        }
+    }
+
+    .link {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $gray-text-color;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.footer-contact {
+    gap: 12px;
+    .footer-contact-address {
+        gap: 14px;
+
+        .address {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .footer-contact-phone {
+        gap: 12px;
+
+        .phone {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+}
+
+
+.footer-social-media {
+    gap: 21px;
+}
+
+.dash-line {
+    // width: 842px;
+    width: 100%;
+    max-width: 1079px;
+    border: 1px dashed #FFD32A;
+    transform: rotate(180deg);
+    margin: 13px auto 0 auto;
+    
+}
+
+.footer-banks {
+    gap: 13px;
+}
+
+
+
+
+/*
+Mobile
+*/
+
+@media only screen and (max-width: 991px){
+
+.footer {
+    max-height: 1245px;
+}
+
+.footer-big-logo {
+    width: 124px;
+}
+
+.footer-top {
+    flex-direction: column;
+}
+
+.footer-mid-item {
+    flex-direction: column;
+}
+
+.footer-social-media {
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.footer-banks {
+    gap: 5px;
+}
+
+}

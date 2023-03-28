@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="./assets/sass/main.css">
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <nav class="navbar navbar-expand-sm bg-dark align-items-center d-flex justify-content-between ">
+            <div class="container-fluid mx-0">
+                <div class="navbar-brand">
+                    <a href="#home"><img class="nav-logo" src="./assets/images/icons/CryptoLogo.png"></img></a>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link text-navbar" id="home" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-navbar" href="#">Trading</a>
+                        <a class="nav-link text-navbar" href="#">About Crypto</a>
+                    </div>
+                </div>
+
+                <div class="d-sm-none d-lg-block">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <a href="#">
+                                    <svg  width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="45" height="45" rx="22.5" fill="url(#paint0_linear_1_284)"/>
+                                        <path d="M23 11C19.145 11 16 14.145 16 18C16 20.41 17.23 22.55 19.094 23.813C15.527 25.343 13 28.883 13 33H15C15 28.57 18.57 25 23 25C27.43 25 31 28.57 31 33H33C33 28.883 30.473 25.344 26.906 23.812C27.8573 23.1698 28.6368 22.3042 29.1762 21.291C29.7156 20.2778 29.9984 19.1478 30 18C30 14.145 26.855 11 23 11ZM23 13C25.773 13 28 15.227 28 18C28 20.773 25.773 23 23 23C20.227 23 18 20.773 18 18C18 15.227 20.227 13 23 13Z" fill="black"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1_284" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFDD59"/>
+                                        <stop offset="1" stop-color="#FFA801"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                        
+                        </a>
+                </div>
+            
+            </div>
+        </nav>
+        <div class="hero position-relative container-fluid">
+            <div class="hero-position">
+                <div class="crypto-title">
+                    <h4 class="mb-35">Revolutionary, brand-new,<br>innovative, different</h5>
+                        <h1>CRYPTO</h1>
+                    <h6 class="d-sm-none d-lg-block">Dex, DeFi, SC and NFT</h6>
+                </div>
+                <div class="hero-user">
+                    <img src="./assets/images/custom/LandingImage.svg" width="320px" alt="">
+                </div>
+                <div class="exchange-title">
+                    <h1>EXCHANGE</h1>
+                    <h5 class="d-sm-none d-lg-block">
+                        New era is coming. Are you ready <br> for it ? If you want to place<br> yourself in future,<br> then you are in <span class="last-word">right place!</span>
+                    </h5>
+                </div>
+            </div>
+            <h6 class="d-sm-block d-lg-none mobile-coin-header">Dex, DeFi, <br> SC and NFT</h6>
+            <div class="d-sm-block d-lg-none mobile-sub-content">
+                <h6>New era is coming. Are you ready for it ? If you <br> want to place yourself in future, <br>then you are in <span class="last-word">right place!</span></h6>
+                <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.21903 0.687988L0.780029 2.09399L13 14.313L25.219 2.09299L23.781 0.687988L13 11.468L2.21903 0.687988ZM2.21903 7.68799L0.780029 9.09399L13 21.313L25.219 9.09299L23.781 7.68799L13 18.468L2.21903 7.68799Z" fill="#FFDD59"/>
+                    </svg>        
+            </div>
+        </div>
+    </header>
+
+    <section class="buy-sell">
+        <div class="text-center w-100 text-standart-size">
+            <h3 class="text-primary">Easy</h3>
+            <h3 class="text-secondary">Buy - Sell</h3>
+        </div>
+        <div class="text-center mt-30 mb-55">
+            Just sign-up in few steps and then start buy - sell operations with easy clicks!
+        </div>
+        <img class="buy-sell-img d-sm-none d-lg-block" src="assets/images/custom/Buy-Sell-Image.svg">
+
+        <div class="but-sell--container">
+            <div class="name-email--section">
+                <input type="text" placeholder="Your name">
+                <input type="text" placeholder="Your E-mail">
+            </div>
+            <div class="password-send-section">
+                <input type="password" placeholder="Your Password">
+                <button class="bg-primary">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending bg-trending ">
+        <div class="container">
+            <div class="trending-main">
+                <div class="trending-head d-flex flex-column align-items-center">
+                    <h2 class="trending-title text-primary kollektif-bold">Trending Coins</h2>
+                    <h3 class="trending-subtitle kollektif-regular text-center">Find your trending coins here and track
+                        them. Also you can start
+                        buy-sell actions from here</h3>
+                </div>
+                <div class="trending-coins-graph">
+                    <div class="container text-center text-white d-sm-none d-md-block">
+                        <div class="row">
+                            <div class="col-sm-3 left-coin-group d-flex flex-column justify-content-center ">
+                                <!-- btc -->
+                                <div class="btc-main-box d-flex flex-column justify-content-center green-box">
+                                    <div class="graph-top d-flex justify-content-between">
+                                        <div class="btc-coin d-flex flex-column align-items-start ">
+                                            <img class="btc-icon" src="assets/images/icons/btc-icon.svg" alt="">
+                                            <div class="text-start">
+                                                <p class="coin-text">Bitcoin</p>
+                                                <p class="coin-time">BTC 24h</p>
+                                            </div>
+                                        </div>
+                                        <div class="coin-price d-flex flex-column ">
+                                            <p class="price">$54,395</p>
+                                            <div class="price-percent percent-green">
+                                                <p class="percent-text">0.96 %</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="graph-bottom">
+                                        <img class="graph-img img-fluid" src="assets/images/custom/green-graph.svg"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-9 right-coin-group">
+                                <div class="row coin-right-top">
+                                    <div class="col-8 col-sm-6"> <!-- eth -->
+                                        <div class="eth-main-box d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="coin d-flex align-items-start">
+                                                    <img class="eth-icon" src="assets/images/icons/eth-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ethereum</p>
+                                                        <p class="coin-time">ETH 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$3,903</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">-0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid"
+                                                    src="assets/images/custom/red-graph.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 col-sm-6"> <!-- xrp -->
+                                        <div class="xrp-main-box d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="coin d-flex align-items-start ">
+                                                    <img class="xrp-icon" src="assets/images/icons/xrp-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ripple</p>
+                                                        <p class="coin-time">XRP 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent">
+                                                        <p class="percent-text percent-green">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid"
+                                                    src="assets/images/custom/xrp-graph.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row coin-right-bottom">
+                                    <div class="col-8 col-sm-6"> <!-- BNB -->
+                                        <div class="bnb-main-box d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="coin d-flex align-items-start ">
+                                                    <img class="bnb-icon" src="assets/images/icons/bnb-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Binance</p>
+                                                        <p class="coin-time">BNB 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent">
+                                                        <p class="percent-text percent-green">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid"
+                                                    src="assets/images/custom/bnb-graph.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 col-sm-6"> <!-- ADA -->
+                                        <div class="ada-main-box d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="coin d-flex align-items-start ">
+                                                    <img class="ada-icon" src="assets/images/icons/ada-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Cardano</p>
+                                                        <p class="coin-time">ADA 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$3,903</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">-0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid"
+                                                    src="assets/images/custom/ada-graph.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-lg-none d-sm-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/btc-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Bitcoin</p>
+                                                        <p class="coin-time">BTC 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$54,395</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid" src="assets/images/custom/green-graph.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="etc-icon" src="assets/images/icons/eth-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ethereum</p>
+                                                        <p class="coin-time">ETH 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$3,995</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid" src="assets/images/custom/red-graph.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/bnb-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Binance</p>
+                                                        <p class="coin-time">BNB 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid" src="assets/images/custom/green-graph.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/xrp-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ripple</p>
+                                                        <p class="coin-time">XRP 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid" src="assets/images/custom/green-graph.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/ada-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Cardano</p>
+                                                        <p class="coin-time">ADA 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column ">
+                                                    <p class="price">$3,903</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">-0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="graph-bottom">
+                                                <img class="graph-img img-fluid" src="assets/images/custom/red-graph.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-head d-flex flex-column align-items-center">
+                <h2 class="testimonials-title text-center text-title fw-bold"><span
+                        class="text-primary">Client</span><br /> Feedbacks</h2>
+                <h3 class="testimonials-subtitle kollektif-regular text-center">Hear us from our lovely clients and see
+                    what they saying about us. You are free to check them.</h3>
+            </div>
+            <div class="testimonials-main d-sm-none d-lg-block d-flex justify-content-center">
+                <div class="container-testimonials-card d-flex flex-column justify-content-center align-items-center">
+                    <div class="testimonials-card-top d-flex justify-content-center">
+                        <div class="testimonials-card-left d-flex align-self-center ">
+                            <div class="card-box-left d-flex align-items-center justify-content-center">
+                                <div
+                                    class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                    <div class="card-img-left position-absolute">
+                                        <img src="assets/images/custom/member2.png" class="card-img"
+                                            style="width: 80px;">
+                                    </div>
+                                    <div class="testimonials-card-body text-center">
+                                        <h5 class="card-title">Jack Dorsey - Twitter</h5>
+                                        <p class="card-text-top">Twitter CEO</p>
+                                        <p class="card-text">“ It’s really fast and secure. <br />We appreciate this
+                                            masterpiece! “</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-card-img">
+                            <img src="assets/images/custom/Testimonial-Image.svg" alt="">
+                        </div>
+                        <div class="card-box d-flex align-items-center justify-content-center">
+                            <div class="testimonials-card-right d-flex">
+                                <div
+                                    class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                    <div class="card-img-right position-absolute">
+                                        <img src="assets/images/custom/member2.png" class="card-img"
+                                            style="width: 80px;">
+                                    </div>
+                                    <div class="testimonials-card-body">
+                                        <h5 class="card-title">Jack Dorsey - Twitter</h5>
+                                        <p class="card-text-top">Twitter CEO</p>
+                                        <p class="card-text">“ It’s really fast and secure. <br />We appreciate this
+                                            masterpiece! “</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="testimonials-card-bottom d-flex justify-content-center">
+                        <div class="card-box-bottom d-flex align-items-center justify-content-center">
+                            <div
+                                class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                <div class="card-img-bottom position-absolute">
+                                    <img src="assets/images/custom/Ellipse2.png" class="card-img" style="width: 80px;">
+                                </div>
+                                <div class="testimonials-card-body">
+                                    <h5 class="card-title">Emre Özer - Futurance</h5>
+                                    <p class="card-text-top">Head of Development</p>
+                                    <p class="card-text-bottom">“ As we use the app in Futurance CO, we really like it
+                                        and
+                                        provided <br />positive feedback. “</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-lg-none d-sm-block position-relative">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="carouselClientFeedbacks" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselClientFeedbacks" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselClientFeedbacks" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselClientFeedbacks" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-box-left d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                            <div class="card-img-left position-absolute">
+                                                <img src="assets/images/custom/member2.png" class="card-img"
+                                                    style="width: 80px;">
+                                            </div>
+                                            <div class="testimonials-card-body text-center">
+                                                <h5 class="card-title">Jack Dorsey - Twitter</h5>
+                                                <p class="card-text-top">Twitter CEO</p>
+                                                <p class="card-text">“ It’s really fast and secure. <br />We appreciate
+                                                    this
+                                                    masterpiece! “</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-box d-flex align-items-center justify-content-center">
+                                        <div class="testimonials-card-right d-flex">
+                                            <div
+                                                class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                                <div class="card-img-right position-absolute">
+                                                    <img src="assets/images/custom/member2.png" class="card-img"
+                                                        style="width: 80px;">
+                                                </div>
+                                                <div class="testimonials-card-body">
+                                                    <h5 class="card-title">Jack Dorsey - Twitter</h5>
+                                                    <p class="card-text-top">Twitter CEO</p>
+                                                    <p class="card-text">“ It’s really fast and secure. <br />We
+                                                        appreciate this
+                                                        masterpiece! “</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-box-bottom d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="testimonials-card text-center d-flex flex-column align-items-center position-relative">
+                                            <div class="card-img-bottom position-absolute">
+                                                <img src="assets/images/custom/Ellipse2.png" class="card-img"
+                                                    style="width: 80px;">
+                                            </div>
+                                            <div class="testimonials-card-body">
+                                                <h5 class="card-title">Emre Özer - Futurance</h5>
+                                                <p class="card-text-top">Head of Development</p>
+                                                <p class="card-text-bottom">“ As we use the app in Futurance CO, we
+                                                    really like it
+                                                    and
+                                                    provided <br />positive feedback. “</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientFeedbacks"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselClientFeedbacks"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="footer-main d-flex flex-column align-items-center">
+                <div class="big-logo">
+                    <img class="footer-big-logo" src="assets/images/logo/footer-logo.svg" alt="logo">
+                </div>
+                <div class="footer-top d-flex text-center">
+                    <ul class="list">
+                        <h2 class="list-title">Blockchain</h2>
+                        <div class="straight-line"></div>
+                        <li class="item">
+                            <a class="link" href="#">Blockchain Technology</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#">DeFi (Decentralised Finance)</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#">Future of the Blockchain</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#">NFT</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <h2 class="list-title">Company</h2>
+                        <div class="straight-line"></div>
+                        <li class="item">
+                            <a class="link" href="#">About Us</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#">Pricing</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#">Vision</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <h2 class="list-title">Resources</h2>
+                        <div class="straight-line"></div>
+                        <li class="item">
+                            <div class="item-group">
+                                <img src="assets/images/icons/chain-icon.png" alt="chain icon">
+                                <a class="link" href="#">Blockchain Global</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-group">
+                                <img src="assets/images/icons/chain-icon.png" alt="chain icon">
+                                <a class="link" href="#">Bitcoin</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-group">
+                                <img src="assets/images/icons/chain-icon.png" alt="chain icon">
+                                <a class="link" href="#">ERC 2.0</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dash-line d-lg-none d-sm-block"></div>
+                <div class="footer-mid">
+                    <div class="footer-mid-item d-flex justify-content-between">
+                        <div class="footer-contact d-sm-none d-lg-block d-flex ">
+                            <div class="footer-contact-address d-flex align-items-center">
+                                <img src="assets/images/icons/pin.svg" alt="pin" style="width: 16px;">
+                                <p class="address text-primary">lorem ipsum sit amet dolar cons</p>
+                            </div>
+                            <div class="footer-contact-phone d-flex align-items-center">
+                                <img src="assets/images/icons/phone-icon.png" alt="phone" style="width: 16px;">
+                                <p class="phone text-primary">+90 222 2 222</p>
+                            </div>
+                        </div>
+                        <!-- mobile -->
+                        <div class="footer-contact mt-71 d-lg-none d-sm-block d-flex flex-column">
+                            <div class="footer-contact-phone d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icons/phone-icon.png" alt="phone" style="width: 16px;">
+                                <p class="phone fs-16 text-primary">+90 222 2 222</p>
+                            </div>
+                            <div class="footer-contact-address mt-15 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icons/pin.svg" alt="pin" style="width: 16px;">
+                                <p class="address fs-16 text-primary">lorem ipsum sit amet dolar cons</p>
+                            </div>
+                        </div>
+                        <div class="footer-social-media d-flex">
+                            <img src="assets/images/icons/Twitter.png" alt="Twitter" width="25px" height="25px">
+                            <img src="assets/images/icons/LinkedIn.png" alt="LinkedIn" width="25px" height="25px">
+                            <img src="assets/images/icons/Facebook.png" alt="Facebook" width="25px" height="25px">
+                        </div>
+                    </div>
+                    <div class="dash-line d-lg-block d-sm-none"></div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-banks d-flex flex-wrap justify-content-center">
+                        <img class="citibank-logo" src="assets/images/logo/citibank_logo.svg" alt="citibank">
+                        <img class="wiretransfer-logo" src="assets/images/logo/wiretransfer_logo.svg" alt="wiretransfer">
+                        <img class="paypal-logo" src="assets/images/logo/paypal_logo.svg" alt="paypal">
+                        <img class="skrill-logo" src="assets/images/logo/skrill_logo.svg" alt="skrill">
+                        <img class="visa-logo" src="assets/images/logo/visa_logo.svg" alt="visa">
+                        <img class="mastercard-logo" src="assets/images/logo/mastercard_logo.svg" alt="mastercard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/vendors/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>

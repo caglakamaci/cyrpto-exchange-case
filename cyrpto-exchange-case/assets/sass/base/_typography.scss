@@ -1,26 +1,26 @@
     // KOLLEKTIF FONT
 
     @font-face {
-        font-family: 'Kollektif Regular';
+        font-family: 'Kollektif';
         font-style: normal;
         font-weight: normal;
-        src: local('Kollektif Regular'), url('../../font/Kollektif.woff') format('woff');
+        src: local('Kollektif'), url('../../font/kollektif/Kollektif.ttf') format('ttf');
     }
 
 
     @font-face {
-        font-family: 'Kollektif Italic';
-        font-style: normal;
+        font-family: 'Kollektif';
+        font-style: italic;
         font-weight: normal;
-        src: local('Kollektif Italic'), url('../../font/Kollektif-Italic.woff') format('woff');
+        src: local('Kollektif-Italic'), url('../../font/kollektif/Kollektif-Italic.ttf') format('ttf');
     }
 
 
     @font-face {
-        font-family: 'Kollektif Bold';
+        font-family: 'Kollektif';
         font-style: normal;
         font-weight: bold;
-        src: local('Kollektif Bold'), url('../../font/Kollektif-Bold.woff') format('woff');
+        src: local('Kollektif-Bold'), url('../../font/Kollektif-Bold.woff') format('woff');
     }
 
 

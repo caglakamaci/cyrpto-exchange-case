@@ -12044,22 +12044,22 @@ table {
 }
 
 @font-face {
-  font-family: "Kollektif Regular";
+  font-family: "Kollektif";
   font-style: normal;
   font-weight: normal;
-  src: local("Kollektif Regular"), url("../../font/Kollektif.woff") format("woff");
+  src: local("Kollektif"), url("../../font/kollektif/Kollektif.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Kollektif Italic";
-  font-style: normal;
+  font-family: "Kollektif";
+  font-style: italic;
   font-weight: normal;
-  src: local("Kollektif Italic"), url("../../font/Kollektif-Italic.woff") format("woff");
+  src: local("Kollektif-Italic"), url("../../font/kollektif/Kollektif-Italic.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Kollektif Bold";
+  font-family: "Kollektif";
   font-style: normal;
   font-weight: bold;
-  src: local("Kollektif Bold"), url("../../font/Kollektif-Bold.woff") format("woff");
+  src: local("Kollektif-Bold"), url("../../font/Kollektif-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Kollektif Bold Italic";
@@ -12111,7 +12111,7 @@ table {
 }
 .header {
   width: 100%;
-  height: 100vh;
+  max-height: 1036px;
   background: linear-gradient(106.75deg, #485460 11.27%, #1E272E 93.38%);
   padding-top: 28px;
 }
@@ -12145,56 +12145,55 @@ table {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 1036px;
   position: relative;
 }
 
 .hero-position {
   position: absolute;
-  left: 50%;
-  top: 43%;
+  left: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .crypto-title {
   position: absolute;
   top: 50%;
-  left: -40%;
+  left: 0%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 
 .exchange-title {
   position: absolute;
-  top: 44%;
-  right: -120%;
+  top: 43%;
+  right: -100%;
   z-index: 1;
-  max-width: 500px;
-  float: left;
 }
 
 .exchange-title h1, .exchange-title .h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Questrial", sans-serif;
   line-height: 124px;
-  background: linear-gradient(89.25deg, #1e1801 -27.85%, #FFD32A 23.39%, #FFDD59 72.53%);
+  background: linear-gradient(275.37deg, #000000 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  text-shadow: 0px 4px 0px #FFD32A;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .exchange-title h5, .exchange-title .h5 {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
-  text-align: right;
+  text-align: left;
 }
 
 .last-word {
@@ -12207,7 +12206,7 @@ table {
 .crypto-title h4, .crypto-title .h4 {
   font-style: normal;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
@@ -12216,27 +12215,30 @@ table {
 .crypto-title h1, .crypto-title .h1 {
   font-style: normal;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 100px;
   line-height: 124px;
-  background: linear-gradient(275.37deg, #a98700 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
+  background: linear-gradient(275.37deg, #000000 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .crypto-title h6, .crypto-title .h6 {
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Questrial", sans-serif;
   line-height: 17px;
-  background: linear-gradient(275.37deg, #a98700 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
+  background: linear-gradient(275.37deg, #000000 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mobile-coin-header {
@@ -12275,35 +12277,100 @@ table {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .hero-img img {
+    width: 360px;
+  }
+  .hero-position {
+    top: 40%;
+    left: 47%;
+  }
+  .crypto-title {
+    left: -17px;
+    top: 44%;
+  }
+  .exchange-title {
+    top: 35%;
+    right: -120%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .navbar-toggler-icon {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyNCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMFYySDI0VjBIMFpNMCA4VjEwSDI0VjhIMFpNMCAxNlYxOEgyNFYxNkgwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
   }
-  .hero-user img {
+  .hero-img img {
     width: 240px;
   }
   .hero-position {
     top: 33%;
+    left: 55%;
   }
   .crypto-title {
-    left: 35px;
+    left: 15px;
+    top: 44%;
   }
   .exchange-title {
-    top: 60%;
-    right: -16%;
+    top: 47%;
+    right: -22%;
+  }
+  .hero-position h6, .hero-position .h6 {
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    background: linear-gradient(275.37deg, #000000 -23.04%, #FFD32A 41.01%, #FFDD59 102.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .hero-position h5, .hero-position .h5 {
+    width: 346px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(158, 158, 158);
+  }
+  .new-era-text {
+    position: absolute;
+    transform: translate(-21%, 0);
+    top: 130%;
+  }
+  .new-era-text img {
+    position: relative;
+    left: 47%;
+    top: 30px;
   }
   .crypto-title h1, .crypto-title .h1 {
-    font-size: 35px;
+    font-size: 55px;
     line-height: 68.08px;
+    background: linear-gradient(41.47deg, #000000 -13.68%, #FFD32A 38.61%, #FFDD59 88.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .crypto-title h4, .crypto-title .h4 {
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    color: #A6A6A6;
+    font-weight: 300;
+    color: rgb(166, 166, 166);
     line-height: 19.2px;
+    position: absolute;
+    top: -65px;
   }
   .exchange-title h1, .exchange-title .h1 {
-    font-size: 35px;
+    font-size: 55px;
     line-height: 68.08px;
+    background: linear-gradient(89.25deg, #000000 -27.85%, #FFD32A 23.39%, #FFDD59 72.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .mobile-coin-header {
     top: 61%;
@@ -12492,11 +12559,11 @@ Mobile
 }
 
 .kollektif-regular {
-  font-family: "Kollektif Regular";
+  font-family: "Kollektif";
 }
 
 .kollektif-italic {
-  font-family: "Kollektif Italic";
+  font-family: "Kollektif-Italic";
 }
 
 .kollektif-bold {
@@ -12549,7 +12616,7 @@ Mobile
   transform: translate(-50%, 0);
 }
 
-.text-standart-size {
+.text-standard-size {
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -12605,6 +12672,11 @@ Mobile
 }
 
 .password-send-section button {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(78, 78, 78);
   width: 100%;
   max-width: 340px;
   padding: 18px;
@@ -12655,6 +12727,9 @@ Mobile
   width: 73px;
   height: 22px;
   background: rgb(5, 196, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
 }
 
@@ -12786,7 +12861,7 @@ Mobile
 
 .testimonials-subtitle {
   max-width: 530px;
-  font-family: "Kollektif Regular";
+  font-family: "Kollektif";
   font-size: 18px;
   line-height: 17px;
 }
@@ -12866,6 +12941,8 @@ Mobile
   line-height: 25px;
   color: rgb(58, 58, 58);
   padding-top: 28px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 .testimonials-card-bottom {
@@ -12896,6 +12973,11 @@ Mobile
   }
   .buy-sell {
     padding: 55px 11px !important;
+  }
+  .trending-title {
+    width: 253px;
+    font-weight: 700;
+    text-align: center;
   }
   .but-sell--container {
     position: relative;

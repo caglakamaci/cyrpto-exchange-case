@@ -133,8 +133,8 @@
     transform: translate(-50%, 0);
 }
 
-.text-standart-size {
-    @include text-standart-size;
+.text-standard-size {
+    @include text-standard-size;
 }
 
 .but-sell--container {
@@ -185,12 +185,19 @@
 }
 
 .password-send-section button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(78, 78, 78, 1);
     width: 100%;
     max-width: 340px;
     padding: 18px;
     border: none;
     border-radius: 10px;
 }
+
+//
 
 // .sign-up-image {
 //     transform: translate(0,-1%);
@@ -250,6 +257,9 @@
     width: 73px;
     height: 22px;
     background: rgba(5, 196, 107, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
 }
 
@@ -481,6 +491,8 @@
     line-height: 25px;
     color: rgba(58, 58, 58, 1);
     padding-top: 28px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 .testimonials-card-bottom {
@@ -515,6 +527,12 @@ Mobile
 
     .buy-sell {
         padding: 55px 11px !important;
+    }
+
+    .trending-title {
+        width: 253px;
+        font-weight: 700;
+        text-align: center;
     }
 
     .but-sell--container {

@@ -444,12 +444,13 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+
 }
 
 .grid-item {
     grid-row: 2 / 3;
 }
+
 //----------- CLIENT CARD
 
 .testimonials-img {
@@ -479,16 +480,16 @@
 .client-card:nth-child(2) {
     position: absolute;
     left: 25%;
-    
+
 }
 
 .client-img img {
-    transform: translate(150%,-150%);
+    transform: translate(150%, -150%);
 
 }
 
 .client-img-future {
-    transform: translate(0,-130%);
+    transform: translate(0, -130%);
 }
 
 .client-card-body {
@@ -655,5 +656,19 @@ Mobile
     .password-send-section button {
         width: 100%;
         max-width: 100%;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -70px;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 1rem;
+        margin-left: 15%;
     }
 }

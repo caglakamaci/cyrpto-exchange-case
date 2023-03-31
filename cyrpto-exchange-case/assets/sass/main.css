@@ -12294,6 +12294,12 @@ table {
     right: -120%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .exchange-title {
+    top: 46%;
+    right: -80%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .navbar-toggler-icon {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyNCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMFYySDI0VjBIMFpNMCA4VjEwSDI0VjhIMFpNMCAxNlYxOEgyNFYxNkgwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
@@ -12470,6 +12476,11 @@ table {
   margin: 13px auto 0 auto;
 }
 
+.footer-mid {
+  width: 100%;
+  max-width: 842px;
+}
+
 .footer-banks {
   gap: 13px;
 }
@@ -12609,10 +12620,9 @@ Mobile
 }
 
 .buy-sell-img {
-  max-width: 400px;
+  max-width: 440px;
   margin-left: 50%;
-  margin-bottom: -24px;
-  z-index: -1;
+  margin-bottom: -13px;
   transform: translate(-50%, 0);
 }
 
@@ -12626,7 +12636,7 @@ Mobile
 
 .but-sell--container {
   width: 100%;
-  max-width: calc(100% - 450px);
+  max-width: 988px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -12682,6 +12692,24 @@ Mobile
   padding: 18px;
   border: none;
   border-radius: 10px;
+}
+
+.password-send-section h5, .password-send-section .h5 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14.93px;
+  color: rgb(30, 39, 46);
+  margin-top: 26px;
+}
+.password-send-section h5 a, .password-send-section .h5 a {
+  color: rgb(255, 211, 42);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.password-send-section h5 a:hover, .password-send-section .h5 a:hover {
+  text-decoration: underline;
 }
 
 .trending {
@@ -12838,7 +12866,8 @@ Mobile
   max-width: none;
 }
 
-.testimonials .carousel-control-prev, .testimonials .carousel-control-next {
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
   display: none;
 }
 
@@ -12871,32 +12900,84 @@ Mobile
   margin-bottom: 185px;
 }
 
-.card-box-left {
-  max-width: 426px;
-  max-height: 211px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
-  border-radius: 12px;
-  padding: 52px 0 34px 0;
-  margin-top: 50px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.card-box {
-  max-width: 426px;
-  max-height: 211px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
-  border-radius: 12px;
-  margin-top: 40px;
+.grid-item {
+  grid-row: 2/3;
 }
 
-.card-box-bottom {
+.testimonials-img {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 85px;
+  right: 20%;
+}
+
+.grid-item:first-child {
+  margin-top: 250px;
+}
+
+.client-card {
+  width: 100%;
   max-width: 682px;
   max-height: 211px;
   background: #FFFFFF;
   box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
   border-radius: 12px;
-  padding: 52px 0 34px 0;
+  padding: 52px 62px 34px 61px;
+}
+
+.client-card:nth-child(2) {
+  position: absolute;
+  left: 25%;
+}
+
+.client-img img {
+  transform: translate(150%, -150%);
+}
+
+.client-img-future {
+  transform: translate(0, -130%);
+}
+
+.client-card-body {
+  padding: 20px;
+}
+
+.card-box-left {
+  width: 100%;
+  max-width: 426px;
+  max-height: 211px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+  padding: 52px 62px 34px 61px;
+  margin-top: 50px;
+}
+
+.card-box {
+  width: 100%;
+  max-width: 426px;
+  max-height: 211px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+  padding: 52px 62px 34px 61px;
+  margin-top: 40px;
+}
+
+.card-box-bottom {
+  width: 100%;
+  max-width: 682px;
+  max-height: 211px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+  padding: 52px 96px 34px 60px;
 }
 
 .card-img {
@@ -12913,6 +12994,14 @@ Mobile
   font-size: 18px;
   line-height: 25px;
   color: rgb(58, 58, 58);
+}
+
+.card-job-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(29, 209, 161);
 }
 
 .card-text-top {

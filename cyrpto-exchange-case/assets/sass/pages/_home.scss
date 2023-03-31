@@ -126,10 +126,9 @@
 }
 
 .buy-sell-img {
-    max-width: 400px;
+    max-width: 440px;
     margin-left: 50%;
-    margin-bottom: -24px;
-    z-index: -1;
+    margin-bottom: -13px;
     transform: translate(-50%, 0);
 }
 
@@ -139,7 +138,7 @@
 
 .but-sell--container {
     width: 100%;
-    max-width: calc(100% - 450px);
+    max-width: 988px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -182,6 +181,7 @@
     max-height: 65px;
     margin-bottom: 25px;
     border-radius: 10px;
+
 }
 
 .password-send-section button {
@@ -197,11 +197,28 @@
     border-radius: 10px;
 }
 
-//
+.password-send-section h5 {
 
-// .sign-up-image {
-//     transform: translate(0,-1%);
-// }
+    font-family: 'Questrial', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14.93px;
+    color: rgba(30, 39, 46, 1);
+    margin-top: 26px;
+
+
+    a {
+        color: rgba(255, 211, 42, 1);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
 
 // --------------------BUY/SELL SECTION END--------------------
 
@@ -380,11 +397,12 @@
     bottom: -50px;
 }
 
-.testimonials .card-box-left{
+.testimonials .card-box-left {
     max-width: none;
 }
 
-.testimonials .carousel-control-prev, .testimonials .carousel-control-next{
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
     display: none;
 }
 
@@ -419,32 +437,98 @@
     margin-bottom: 185px;
 }
 
-.card-box-left {
-    max-width: 426px;
-    max-height: 211px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
-    border-radius: 12px;
-    padding: 52px 0 34px 0;
-    margin-top: 50px;
+// .testimonials-card {
+//     position: absolute;
+// }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
-.card-box {
-    max-width: 426px;
-    max-height: 211px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
-    border-radius: 12px;
-    margin-top: 40px;
+.grid-item {
+    grid-row: 2 / 3;
+}
+//----------- CLIENT CARD
+
+.testimonials-img {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 85px;
+    right: 20%;
 }
 
-.card-box-bottom {
+
+.grid-item:first-child {
+    margin-top: 250px;
+}
+
+
+.client-card {
+    width: 100%;
     max-width: 682px;
     max-height: 211px;
     background: #FFFFFF;
     box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
     border-radius: 12px;
-    padding: 52px 0 34px 0;
+    padding: 52px 62px 34px 61px;
+}
+
+.client-card:nth-child(2) {
+    position: absolute;
+    left: 25%;
+    
+}
+
+.client-img img {
+    transform: translate(150%,-150%);
+
+}
+
+.client-img-future {
+    transform: translate(0,-130%);
+}
+
+.client-card-body {
+    padding: 20px;
+}
+
+
+
+//------------- CLIENT CARD END
+
+.card-box-left {
+    width: 100%;
+    max-width: 426px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    padding: 52px 62px 34px 61px;
+    margin-top: 50px;
+}
+
+.card-box {
+    width: 100%;
+    max-width: 426px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    padding: 52px 62px 34px 61px;
+    margin-top: 40px;
+}
+
+.card-box-bottom {
+    width: 100%;
+    max-width: 682px;
+    max-height: 211px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -8px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    padding: 52px 96px 34px 60px;
 }
 
 
@@ -463,6 +547,14 @@
     font-size: 18px;
     line-height: 25px;
     color: rgba(58, 58, 58, 1);
+}
+
+.card-job-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(29, 209, 161, 1);
 }
 
 .card-text-top {
@@ -515,6 +607,10 @@ Mobile
 .max-w-100 {
     max-width: 100%;
 }
+
+
+
+
 
 @media only screen and (max-width: 990px) {
     .d-sm-none {

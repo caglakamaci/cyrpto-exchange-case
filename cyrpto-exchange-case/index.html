@@ -18,21 +18,7 @@
                     <a href="#home"><img class="nav-logo" src="./assets/images/icons/CryptoLogo.png"></img></a>
                 </div>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-center">
-                        <a class="nav-link text-navbar" id="home" aria-current="page" href="#">Home</a>
-                        <a class="nav-link text-navbar" href="#">Trading</a>
-                        <a class="nav-link text-navbar" href="#">About Crypto</a>
-                    </div>
-                </div>
-
-                <div class="d-sm-none d-lg-block">
+                <div class="d-xsm-block d-lg-none">
                     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -52,9 +38,34 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-
                     </a>
                 </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link text-navbar" id="home" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-navbar" href="#">Trading</a>
+                        <a class="nav-link text-navbar" href="#">About Crypto</a>
+                    </div>
+                </div>
+
+                <div class="d-xsm-none d-sm-block d-lg-block">
+                    <a href="#">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="45" height="45" rx="22.5" fill="url(#paint0_linear_1_283)" />
+                            <path
+                                d="M23 11C19.145 11 16 14.145 16 18C16 20.41 17.23 22.55 19.094 23.813C15.527 25.343 13 28.883 13 33H15C15 28.57 18.57 25 23 25C27.43 25 31 28.57 31 33H33C33 28.883 30.473 25.344 26.906 23.812C27.8573 23.1698 28.6368 22.3042 29.1762 21.291C29.7156 20.2778 29.9984 19.1478 30 18C30 14.145 26.855 11 23 11ZM23 13C25.773 13 28 15.227 28 18C28 20.773 25.773 23 23 23C20.227 23 18 20.773 18 18C18 15.227 20.227 13 23 13Z"
+                                fill="black" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_283" x1="22.5" y1="0" x2="22.5" y2="45"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFDD59" />
+                                    <stop offset="1" stop-color="#FFA801" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
 
             </div>
         </nav>
@@ -124,7 +135,7 @@
                         buy-sell actions from here</h3>
                 </div>
                 <div class="trending-coins-graph">
-                    <div class="container text-center text-white d-sm-none d-md-block">
+                    <div class="container text-center text-white d-sm-none d-md-none">
                         <div class="row">
                             <div class="col-sm-3 left-coin-group d-flex flex-column justify-content-center ">
                                 <!-- btc -->
@@ -260,171 +271,276 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container d-lg-none d-sm-block">
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="carouselExampleIndicators" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="3" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="4" aria-label="Slide 3"></button>
+
+                    <div class="grid-container-graph d-sm-none d-lg-grid">
+                        <div class="grid-item1 btc-main-box d-flex flex-column justify-content-center green-box">
+                            <div class="graph-top d-flex justify-content-between">
+                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                    <img class="btc-icon" src="assets/images/icons/btc-icon.svg" alt="">
+                                    <div class="text-start">
+                                        <p class="coin-text">Bitcoin</p>
+                                        <p class="coin-time">BTC 24h</p>
                                     </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div
-                                                class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
-                                                <div class="graph-top d-flex justify-content-between">
-                                                    <div class="btc-coin d-flex flex-column align-items-start ">
-                                                        <img class="btc-icon" src="assets/images/icons/btc-icon.svg"
-                                                            alt="">
-                                                        <div class="text-start">
-                                                            <p class="coin-text">Bitcoin</p>
-                                                            <p class="coin-time">BTC 24h</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="coin-price d-flex flex-column align-items-end ">
-                                                        <p class="price">$54,395</p>
-                                                        <div class="price-percent percent-green">
-                                                            <p class="percent-text">0.96 %</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="graph-bottom">
-                                                    <img class="graph-img img-fluid"
-                                                        src="assets/images/custom/green-graph.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div
-                                                class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
-                                                <div class="graph-top d-flex justify-content-between">
-                                                    <div class="btc-coin d-flex flex-column align-items-start ">
-                                                        <img class="etc-icon" src="assets/images/icons/eth-icon.svg"
-                                                            alt="">
-                                                        <div class="text-start">
-                                                            <p class="coin-text">Ethereum</p>
-                                                            <p class="coin-time">ETH 24h</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="coin-price d-flex flex-column align-items-end ">
-                                                        <p class="price">$3,995</p>
-                                                        <div class="price-percent percent-red">
-                                                            <p class="percent-text">0.96 %</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="graph-bottom">
-                                                    <img class="graph-img img-fluid"
-                                                        src="assets/images/custom/red-graph.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div
-                                                class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
-                                                <div class="graph-top d-flex justify-content-between">
-                                                    <div class="btc-coin d-flex flex-column align-items-start ">
-                                                        <img class="btc-icon" src="assets/images/icons/bnb-icon.svg"
-                                                            alt="">
-                                                        <div class="text-start">
-                                                            <p class="coin-text">Binance</p>
-                                                            <p class="coin-time">BNB 24h</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="coin-price d-flex flex-column align-items-end ">
-                                                        <p class="price">$1,07</p>
-                                                        <div class="price-percent percent-green">
-                                                            <p class="percent-text">0.96 %</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="graph-bottom">
-                                                    <img class="graph-img img-fluid"
-                                                        src="assets/images/custom/green-graph.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div
-                                                class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
-                                                <div class="graph-top d-flex justify-content-between">
-                                                    <div class="btc-coin d-flex flex-column align-items-start ">
-                                                        <img class="btc-icon" src="assets/images/icons/xrp-icon.svg"
-                                                            alt="">
-                                                        <div class="text-start">
-                                                            <p class="coin-text">Ripple</p>
-                                                            <p class="coin-time">XRP 24h</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="coin-price d-flex flex-column align-items-end ">
-                                                        <p class="price">$1,07</p>
-                                                        <div class="price-percent percent-green">
-                                                            <p class="percent-text">0.96 %</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="graph-bottom">
-                                                    <img class="graph-img img-fluid"
-                                                        src="assets/images/custom/green-graph.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div
-                                                class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
-                                                <div class="graph-top d-flex justify-content-between">
-                                                    <div class="btc-coin d-flex flex-column align-items-start ">
-                                                        <img class="btc-icon" src="assets/images/icons/ada-icon.svg"
-                                                            alt="">
-                                                        <div class="text-start">
-                                                            <p class="coin-text">Cardano</p>
-                                                            <p class="coin-time">ADA 24h</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="coin-price d-flex flex-column align-items-end ">
-                                                        <p class="price">$3,903</p>
-                                                        <div class="price-percent percent-red">
-                                                            <p class="percent-text">-0.96 %</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="graph-bottom">
-                                                    <img class="graph-img img-fluid"
-                                                        src="assets/images/custom/red-graph.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
                                 </div>
+                                <div class="coin-price d-flex flex-column align-items-end ">
+                                    <p class="price">$54,395</p>
+                                    <div class="price-percent percent-green">
+                                        <p class="percent-text">0.96 %</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-bottom">
+                                <img class="graph-img img-fluid" src="assets/images/custom/green-graph.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item2 eth-main-box d-flex flex-column justify-content-center red-box">
+                            <div class="graph-top d-flex justify-content-between">
+                                <div class="coin d-flex align-items-start">
+                                    <img class="eth-icon" src="assets/images/icons/eth-icon.svg" alt="">
+                                    <div class="text-start">
+                                        <p class="coin-text">Ethereum</p>
+                                        <p class="coin-time">ETH 24h</p>
+                                    </div>
+                                </div>
+                                <div class="coin-price d-flex flex-column align-items-end ">
+                                    <p class="price">$3,903</p>
+                                    <div class="price-percent percent-red">
+                                        <p class="percent-text">-0.96 %</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-bottom">
+                                <img class="graph-img img-fluid" src="assets/images/custom/red-graph.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="grid-item3 xrp-main-box d-flex flex-column justify-content-center green-box">
+                            <div class="graph-top d-flex justify-content-between">
+                                <div class="coin d-flex align-items-start ">
+                                    <img class="xrp-icon" src="assets/images/icons/xrp-icon.svg" alt="">
+                                    <div class="text-start">
+                                        <p class="coin-text">Ripple</p>
+                                        <p class="coin-time">XRP 24h</p>
+                                    </div>
+                                </div>
+                                <div class="coin-price d-flex flex-column align-items-end ">
+                                    <p class="price">$1,07</p>
+                                    <div class="price-percent">
+                                        <p class="percent-text percent-green">0.96 %</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-bottom">
+                                <img class="graph-img img-fluid" src="assets/images/custom/xrp-graph.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="grid-item4 bnb-main-box d-flex flex-column justify-content-center green-box">
+                            <div class="graph-top d-flex justify-content-between">
+                                <div class="coin d-flex align-items-start ">
+                                    <img class="bnb-icon" src="assets/images/icons/bnb-icon.svg" alt="">
+                                    <div class="text-start">
+                                        <p class="coin-text">Binance</p>
+                                        <p class="coin-time">BNB 24h</p>
+                                    </div>
+                                </div>
+                                <div class="coin-price d-flex flex-column align-items-end ">
+                                    <p class="price">$1,07</p>
+                                    <div class="price-percent">
+                                        <p class="percent-text percent-green">0.96 %</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-bottom">
+                                <img class="graph-img img-fluid" src="assets/images/custom/bnb-graph.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="grid-item5 ada-main-box d-flex flex-column justify-content-center red-box">
+                            <div class="graph-top d-flex justify-content-between">
+                                <div class="coin d-flex align-items-start ">
+                                    <img class="ada-icon" src="assets/images/icons/ada-icon.svg" alt="">
+                                    <div class="text-start">
+                                        <p class="coin-text">Cardano</p>
+                                        <p class="coin-time">ADA 24h</p>
+                                    </div>
+                                </div>
+                                <div class="coin-price d-flex flex-column align-items-end ">
+                                    <p class="price">$3,903</p>
+                                    <div class="price-percent percent-red">
+                                        <p class="percent-text">-0.96 %</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-bottom">
+                                <img class="graph-img img-fluid" src="assets/images/custom/ada-graph.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container d-lg-none d-sm-block">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="4" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div
+                                            class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/btc-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Bitcoin</p>
+                                                        <p class="coin-time">BTC 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column align-items-end ">
+                                                    <p class="price">$54,395</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom"
+                                                style="width: 100%; height: 347px; background-image: url(assets/images/custom/green-graph.svg); background-size: contain;   background-position: center; background-repeat: repeat-x;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div
+                                            class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="etc-icon" src="assets/images/icons/eth-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ethereum</p>
+                                                        <p class="coin-time">ETH 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column align-items-end ">
+                                                    <p class="price">$3,995</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom"
+                                                style="width: 100%; height: 347px; background-image: url(assets/images/custom/red-graph.svg); background-size: contain;   background-position: center; background-repeat: repeat-x;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div
+                                            class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/bnb-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Binance</p>
+                                                        <p class="coin-time">BNB 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column align-items-end ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom"
+                                                style="width: 100%; height: 200px; background-image: url(assets/images/custom/green-graph.svg); background-size: contain;   background-position: center; background-repeat: repeat-x;">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div
+                                            class="btc-main-box max-w-100 d-flex flex-column justify-content-center green-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/xrp-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Ripple</p>
+                                                        <p class="coin-time">XRP 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column align-items-end ">
+                                                    <p class="price">$1,07</p>
+                                                    <div class="price-percent percent-green">
+                                                        <p class="percent-text">0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom"
+                                                style="width: 100%; height: 200px; background-image: url(assets/images/custom/green-graph.svg); background-size: contain;   background-position: center; background-repeat: repeat-x;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div
+                                            class="btc-main-box max-w-100 d-flex flex-column justify-content-center red-box">
+                                            <div class="graph-top d-flex justify-content-between">
+                                                <div class="btc-coin d-flex flex-column align-items-start ">
+                                                    <img class="btc-icon" src="assets/images/icons/ada-icon.svg" alt="">
+                                                    <div class="text-start">
+                                                        <p class="coin-text">Cardano</p>
+                                                        <p class="coin-time">ADA 24h</p>
+                                                    </div>
+                                                </div>
+                                                <div class="coin-price d-flex flex-column align-items-end ">
+                                                    <p class="price">$3,903</p>
+                                                    <div class="price-percent percent-red">
+                                                        <p class="percent-text">-0.96 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="graph-bottom"
+                                                style="width: 100%; height: 347px; background-image: url(assets/images/custom/red-graph.svg); background-size: contain;   background-position: center; background-repeat: repeat-x;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

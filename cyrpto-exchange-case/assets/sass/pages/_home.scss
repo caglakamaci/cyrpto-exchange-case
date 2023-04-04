@@ -161,7 +161,8 @@
     padding: 18px;
     border: 2px solid #485460;
     max-height: 65px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
@@ -254,6 +255,36 @@
 
 //------------- TRENDING GRAPHICS
 
+
+.grid-container-graph {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 29px;
+}
+
+.grid-item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.grid-item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.grid-item3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.grid-item4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.grid-item5 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
 .green-box {
     background: $graph-box-green-bg;
     border: 2px solid #0BE881;
@@ -297,6 +328,7 @@
     max-height: 347px;
     gap: 81px;
     padding-bottom: 28px;
+    margin-left: 40px;
 }
 
 
@@ -312,7 +344,6 @@
     max-height: 159px;
     gap: 13px;
     padding-bottom: 11px;
-    margin-left: 10px;
 }
 
 
@@ -328,7 +359,6 @@
     max-height: 159px;
     gap: 13px;
     padding-bottom: 11px;
-    margin-left: 10px;
 }
 
 
@@ -369,6 +399,7 @@
     font-size: 30px;
     line-height: 30.65px;
     color: $white;
+    margin-bottom: 7px;
 }
 
 
@@ -658,6 +689,10 @@ Mobile
         max-width: 100%;
     }
 
+    .btc-main-box {
+        margin-left: 0;
+    }
+
     .carousel-indicators {
         position: absolute;
         right: 0;
@@ -670,5 +705,16 @@ Mobile
         margin-right: 15%;
         margin-bottom: 1rem;
         margin-left: 15%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .d-xsm-none {
+        display: none !important;
+    }
+
+    .d-xsm-block {
+        display: block !important;
     }
 }
